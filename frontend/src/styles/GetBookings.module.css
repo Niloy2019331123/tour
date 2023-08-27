@@ -1,0 +1,64 @@
+.header {
+  font-family: "Pacifico", cursive;
+  text-align: center;
+  font-size: 45px;
+  /* text-shadow: 2px 2px 5px #faa935; */
+  /* color: #faa935; */
+}
+.listItem {
+  margin-bottom: 100px;
+  width: 1200px;
+  margin: 0 auto;
+}
+.listItem img {
+  width: 100px;
+  height: auto;
+  margin-right: 20px;
+}
+.tourHeading {
+  font-size: 40px;
+  margin: 0;
+  color: #faa935;
+  width: 600px;
+  padding: 10px;
+  border-radius: 10px;
+  font-family: "Itim", cursive;
+}
+.tour {
+  border: 2px solid red;
+  padding: 30px;
+  border-radius: 15px;
+}
+
+.tourDetails {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 60px;
+}
+.guestImageAndCount span {
+  font-size: 40px;
+  color: #faa935;
+  font-weight: bold;
+  border-radius: 50%;
+  height: 70px;
+  width: 70px;
+  text-align: center;
+  border: 2px solid #faa935;
+}
+.guestImageAndCount {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tourHolder {
+  font-size: 50px;
+}
+
+.tourTimeHolders {
+  font-size: 40px;
+  background-color: #faa935;
+  color: white;
+  border-radius: 8px;
+  padding: 10px;
+}
