@@ -35,6 +35,15 @@ const Booking = ({ tour, avgRating }) => {
     e.preventDefault();
 
     console.log(booking);
+    const selectedDateString = booking.bookAt;
+    const selectedDate = new Date(selectedDateString);
+    const todaysDate = new Date();
+    if (selectedDate >= todaysDate) {
+      console.log("success");
+    } else {
+      alert("You cannot book a tour for a previous date");
+      return;
+    }
 
     try {
       if (!user || user === undefined || user === null) {
@@ -109,6 +118,7 @@ const Booking = ({ tour, avgRating }) => {
             />
             <input
               type="number"
+              min="1"
               placeholder="Guest"
               id="guestSize"
               required
