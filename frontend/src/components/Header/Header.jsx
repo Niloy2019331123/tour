@@ -20,6 +20,10 @@ const nav__links = [
     path: "/tours",
     display: "Tours",
   },
+  {
+    path: "/get-bookings",
+    display: "Bookings",
+  },
 ];
 const Header = () => {
   const headerRef = useRef(null);
@@ -72,14 +76,16 @@ const Header = () => {
               <ul className="menu d-flex align-items-center gap-5">
                 {nav__links.map((item, index) => (
                   <li className="nav__item" key={index}>
-                    <NavLink
-                      to={item.path}
-                      className={(navClass) =>
-                        navClass.isActive ? "active__link" : ""
-                      }
-                    >
-                      {item.display}
-                    </NavLink>
+                    {!user && item.display === "Bookings" ? null : (
+                      <NavLink
+                        to={item.path}
+                        className={(navClass) =>
+                          navClass.isActive ? "active__link" : ""
+                        }
+                      >
+                        {item.display}
+                      </NavLink>
+                    )}
                   </li>
                 ))}
               </ul>
@@ -89,7 +95,14 @@ const Header = () => {
               <div className="nav__btns d-flex align-items-center gap-4 ">
                 {user ? (
                   <>
-                    <h5 className="mb-0">{user.username}</h5>
+                    <h5
+                      style={{
+                        marginLeft: "20px",
+                      }}
+                      className="mb-0"
+                    >
+                      {user.username}
+                    </h5>
                     <Button className="btn btn-dark" onClick={logout}>
                       Logout
                     </Button>
@@ -107,7 +120,7 @@ const Header = () => {
               </div>
 
               <span className="mobile__menu" onClick={toggleMenu}>
-                <i class="ri-menu-line"></i>
+                <i className="ri-menu-line"></i>
               </span>
             </div>
           </div>
