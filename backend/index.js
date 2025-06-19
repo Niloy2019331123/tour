@@ -23,7 +23,7 @@ mongoose.set("strictQuery", false);
 const connectToDB = async () => {
   try {
     const conn = mongoose.connect(
-      "mongodb+srv://niloy23:123@cluster0.ti6ovyz.mongodb.net/ludu?retryWrites=true&w=majority"
+      "mongodb+srv://joysourav37:1234@cluster0.z7ox8n8.mongodb.net/tours_booking?retryWrites=true&w=majority&appName=Cluster0"
     );
     console.log(`Connected to MongoDB Database `.bgMagenta.white);
   } catch (err) {

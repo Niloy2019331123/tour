@@ -15,6 +15,7 @@ import SearchBar from "../shared/SearchBar";
 import MasonryImagesGallery from "../components/Image-gallery/MasonryImagesGallery";
 import Testimonials from "../components/Testimonial/Testimonials";
 import Newsletter from "../shared/Newsletter";
+import LocationMap from "../components/Map/LocationMap";
 
 const Home = () => {
   return (
@@ -61,6 +62,24 @@ const Home = () => {
           <SearchBar />
         </Container>
       </section>
+      {/*====== hero section end======*/}
+
+      {/*====== location map section start======*/}
+      <section>
+        <Container>
+          <Row>
+            <Col lg="12">
+              <Subtitle subtitle={"Your Location"} />
+              <h2 className="featured__tour-title">Find yourself on the map</h2>
+            </Col>
+            <Col lg="12">
+              <LocationMap />
+            </Col>
+          </Row>
+        </Container>
+      </section>
+      {/*====== location map section end======*/}
+
       {/*====== hero section start======*/}
       <section>
         <Container>

@@ -128,7 +128,7 @@ const Footer = () => {
                     <i class="ri-mail-line"></i>
                   </span>
                   Email:
-                  <p className="mb-0">parthasarothi111@gmail.com</p>
+                  <p className="mb-0">niloybhowmik177@gmail.com</p>
                 </h6>
               </ListGroupItem>
 
@@ -141,7 +141,7 @@ const Footer = () => {
                     <i class="ri-phone-fill"></i>
                   </span>
                   Phone:
-                  <p className="mb-0">+8801314385442</p>
+                  <p className="mb-0">+8801521768443</p>
                 </h6>
               </ListGroupItem>
             </ListGroup>
